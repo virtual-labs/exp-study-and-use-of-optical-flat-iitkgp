@@ -2,38 +2,59 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the primary function of an optical flat?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Measure temperature",
+        "b": "Assess the flatness of the surfaces",
+        "c": "Determine refractive index",
+        "d": "Analyse colour spectrum"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      "correctAnswer": "b",
+      "difficulty": "Beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The Working Principle of optical flat is",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Diffraction",
+        "b": "Reflection",
+        "c": "Interference",
+        "d": "Dispersion"
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "What type of light source is used with optical flats?",
+      "answers": {
+        "a": "Monochromatic",
+        "b": "Ultraviolet light",
+        "c": "Both a & b",
+        "d": "None of the above"
+      },
+      "correctAnswer": "a",
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "In which industry are optical flats commonly used for precision measurements?",
+      "answers": {
+        "a": "Agriculture",
+        "b": "Fashion",
+        "c": "Aerospace",
+        "d": "Entertainment"
+      },
+      "correctAnswer": "c",
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "Which of the following materials is used to make optical flats?",
+      "answers": {
+        "a": "Toughened glass",
+        "b": "Glass wool",
+        "c": "Fused quartz",
+        "d": "All of the above"
+      },
+      "correctAnswer": "c",
+      "difficulty": "Beginner"
     }
   ]
 }
