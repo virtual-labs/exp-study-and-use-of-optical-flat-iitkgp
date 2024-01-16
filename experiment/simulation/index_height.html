@@ -81,7 +81,7 @@
         <div class="col-md-10"><!--2nd col under 3rd container start-->
             <p class="text-center bg-success"> <a class="nav-link" data-bs-toggle="tab"  id="instcontrol" style="background-color:#128BD9"  ><span class=" h3 text-dark"> Instructions </span></a>
               <div id="inst" style="display:none">
-			  <ol>
+			   <ol>
                       <p>In this experiment there are two parts.<br/>
 					  i) Check flatness of test objects<br/>
 					  ii) Optical flat as comparator
@@ -98,7 +98,7 @@
 					 <li>Switch off the light source. Check flatness of other surfaces with different optical flats similarly.</li><br/>
 					 
 					 <li> Click on 'Experiment Parts' button again. Choose 'Optical flat as comparator'. A master gauge and a sample slip gauge will be there
-            in the flat platform of the light source setup. Each of them having width of 15 mm, kept at a distance of 30 mm from each other.</li><br/>
+						in the flat platform of the light source setup. Each of them having width of 15 mm, kept at a distance of 30 mm from each other.</li><br/>
 					 
 					 <li>Select 'Regular' after clicking on 'Choose optical flat'.</li><br/>
 					 
@@ -130,7 +130,7 @@
 	<div class="row my-5 gy-2">
 	
 	<div class="col-md-12">
-	<input type="number" id="seudobox" value="1" min="1" max="2" style="visibility:hidden">
+	<input type="number" id="seudobox" value="2" min="1" max="2" style="visibility:hidden">
 	<input type="number" id="chkobj" value="" min="1" max="3" style="visibility:hidden">
 	
 	<div class = "btn-group">
@@ -157,16 +157,7 @@
   </ul>
 </div>
 
-<div class="dropdown p-2">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
-    Choose test surface
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" onclick="obj1()">Test surface 1</a></li>
-    <li><a class="dropdown-item" onclick="obj2()">Master gauge</a></li>
-	<li><a class="dropdown-item" onclick="obj3()">Sample slip gauge</a></li>
-  </ul>
-</div>
+
 
 
 </div>
@@ -175,6 +166,30 @@
 	</div>
 	</div>
 	
+	
+		<div class="row ">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<div class="card" style=" width:100%;background-color:pink" > 
+			
+			<div class="card-body"  >
+					
+			<span class="card-text" >Total number of fringes ( n ):&nbsp;<input  type="number" id="n" value="0" readonly=readonly style="width:20%;text-align:center"></span><br/><br/>
+			<span class="card-text">True height of sample gauge ( mm ):&nbsp;<input type="number" id="sgh" value="0" readonly=readonly  style="width:30%;text-align:center"></span><br/><br/>
+			<span class="card-text">wavelength of the light source ( &lambda; ) = 0.509 &times; 10<sup>-3</sup> mm</span><br/><br/>
+			<span class="card-text">Standard height of Master gauge: 20 mm</span><br/><br/>
+			<span class="card-text">Gauge width ( L ): 15 mm</span><br/><br/>
+			<span class="card-text">Consecutive distance between two gauges ( G ): 30 mm</span><br/><br/>
+			<span class="card-text">Change in height ( &Delta;H ) = (n &lambda;/2 ) ( G/L ) mm</span><br/><br/>
+
+			<button  type="button"   class="btn btn-danger " onclick="calculate()" >Calculate</button>
+			</div></div></div>			
+			<div class="col-md-1"></div>
+						
+			
+			</div> 
+			
+			
 			<div class="row ">
 			<div class="col-md-12">
 			
@@ -186,11 +201,14 @@
 			<img id="lightray" src="./images/light_ray.png" >
 			<img id="sw" src="./images/tsw_off.png" onclick="onoff()" >
 			
-			<img id="opticalF" src="./images/regular.png" onclick="">
-			<img id="fringe" src="./images/fr1.png" onclick="">
-			<img id="blkobj" src="./images/tobj.png" onclick="">
-			<img id="mgauge" src="./images/masterGauge.png" onclick="">
-			<img id="sgauge" src="./images/sampleGauge.png" onclick="">
+			<img id="opticalF2" src="./images/regular.png" >
+			
+			<img id="patternL" src="./images/ptrn2.png" >
+			<img id="patternR" src="./images/ptrn1.png" >
+			
+			<img id="blkobj" src="./images/tobj.png" >
+			<img id="mgauge2" src="./images/masterGauge.png" >
+			<img id="sgauge2" src="./images/sampleGauge.png">
 			
 			</div>
 			
@@ -199,10 +217,50 @@
 	</div>
 	
 	
+	
+	<div class="row  my-5 gy-2"><!--- 2nd row under fourth container start--->		
+		
+			<div class="col-md-12 "><!--2nd col under 2nd row start -->	
+			
+		<button type="button"  class="btn btn-info " onclick="CreateTable()" >Add to Table</button>
+	
+		<button type="button"   class="btn btn-danger " onclick="Refresh()" >Clear</button>
+		</div>
+		</div> 
+		
+	<div class="row"><!--- 2nd row under fourth container start--->	
+		
+			<div class="col-md-12 "><!--2nd col under 2nd row start -->
+			
+			<br/>
+			<div><a class="nav-link" data-bs-toggle="tab"  id="myTables" style="background-color:#128BD9" ><span class=" h3 text-dark"> Table </span></a>
+			
+			<table id="obsTable1" style="display:none;width:100%">			
+				
+				  <tr>
+					<th>Sl No.</th>
+					<th>Total no. of fringes( n )</th> 
+					<th>True height of sample gauge ( mm )</th>
+					<th>Percentage change in the height (&percnt;)
+					$$( \frac{\Delta H}{20} \times 100 )$$</th>
+					
+				  </tr>
+				  
+			</table>
+			
+			
+			</div>	
+				</div>				
+		
+	</div><!--- 2nd row under fourth container end---
+ -->
+
           <!-- Code End here-->
         </div><!--Fourth container under body tag end-->
           
-     
+      <!--</div>
+    </div>-->
+
     <div class="container p-3 my-5 text-primary text-center border"><!--Last and fifth container under body tag start-->
       <div class="row">
         <footer>
