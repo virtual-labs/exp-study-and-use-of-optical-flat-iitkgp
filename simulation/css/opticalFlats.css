@@ -1,0 +1,195 @@
+
+
+
+
+.img-container{	
+	position:relative;
+	display:inline-block;	
+}
+
+
+#calcDiv{	
+width: 30%;
+height: 30%;
+float: left;
+color: red;
+font-size: 1vw;
+background-color: powderblue;
+}
+#calcDiv2{	
+width: 35%;
+height: 70%;
+float: right;
+color: red;
+font-size: 1vw;
+background-color: powderblue;
+}
+
+#opticalF{
+display: none;
+position: absolute;
+left: 40%;
+top: 63.5%;
+/* height: 100%; */
+width: 24%;
+z-index: 3;
+opacity: 0.4;
+}
+
+#fringe{
+display: none;
+position: absolute;
+left: 40%;
+top: 63.5%;
+/* height: 100%; */
+width: 24%;
+z-index: 2;
+opacity: 0.1;
+}
+
+#blkobj{
+display:none;	
+position: absolute;
+left: 40%;
+top: 65.5%;
+/* height: 100%; */
+width: 25%;
+z-index: 1;
+}
+#mgauge{
+display: none; 
+position: absolute;
+left: 49%;
+top: 67.5%;
+/* height: 100%; */
+/* width: 25%; */
+z-index: 1;
+}
+#sgauge{
+display: none; 
+position: absolute;
+left: 50%;
+top: 65.5%;
+/* height: 52%; */
+width: 6%;
+z-index: 1;
+}
+#sw{
+position: absolute;
+left: 70%;
+top: 39.5%;
+/* height: 52%; */
+width: 9%;
+z-index:3;
+}
+
+#light{
+display:none;
+position: absolute;
+left: 24%;
+top: 32.5%;
+width: 55%;
+z-index:1;
+}
+
+#lightray{
+display: none;
+position: absolute;
+left: 20%;
+top: 32%;
+width: 67%;
+opacity: 0.5;
+transform: rotate(224deg);
+z-index: 2;
+}
+
+/*-----------------------------for test obj1 fringe show---------------------------*/	
+.fringe1{
+	animation:fringe1 2s linear forwards;	
+}
+
+@keyframes fringe1 {
+  from {opacity: 0.1;}
+  to   {opacity: 0.5;}
+}	
+/*-------------------------------------------------------------------------*/	
+	
+/*-----------------------------for test obj1 fringe show---------------------------*/	
+.fringe2{
+	animation:fringe2 2s linear forwards;	
+}
+
+@keyframes fringe2 {
+  from {opacity: 0.1;}
+  to   {opacity: 0.6;}
+}	
+/*-------------------------------------------------------------------------*/	
+	
+
+
+
+
+#opticalF2{
+display: none;
+position: absolute;
+left: 36%;
+top: 63.5%;
+/* height: 100%; */
+width: 30%;
+z-index: 3;
+opacity: 0.4;
+}
+
+#patternL{
+display: none; 
+position: absolute;
+left: 39%;
+top: 67.5%;
+height: 14%;
+width: 5%;
+z-index: 2;
+opacity: 0.7;
+}
+
+#patternR{
+display: none;
+position: absolute;
+left: 59%;
+top: 66.5%;
+height: 16%;
+width: 5%;
+z-index: 2;
+opacity: 0.7;
+}
+
+#mgauge2{
+display: none; 
+position: absolute;
+left: 38%;
+top: 67.5%;
+/* height: 100%; */
+/* width: 25%; */
+z-index: 1;
+}
+#sgauge2{
+display: none;
+position: absolute;
+left: 59%;
+top: 66.5%;
+height: 19%;
+width: 6%;
+z-index: 1;
+}
+
+/*-common part--*/
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}  
+tr:nth-child(odd) {
+  background-color: #F0FBCC;
+} 

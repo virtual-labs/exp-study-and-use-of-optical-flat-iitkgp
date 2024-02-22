@@ -1,0 +1,223 @@
+<!-- This HTML page and script files are developed by
+    Piyali Chattopadhyay
+    Project Scientist-Technical,
+    Virtual Labs IIT Kharagpur.-->
+
+<!DOCTYPE html>
+<html lang="en"><!--html tag start-->
+<head>
+    <title>Study and Use of Optical Flat</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+
+   
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script  src="./js/opticalFlats.js">   </script>
+  
+
+  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>-->
+
+
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.2.1/math.js"></script>
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.2.1/math.min.js  "></script>
+ 
+ 
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+
+<link rel="stylesheet" href="./css/opticalFlats.css">
+
+	
+
+
+  <style>
+	
+	
+	canvas {	
+	max-width:100%;
+	}
+	
+	
+  </style>
+  
+  
+  
+</head>
+<body><!--body tag start-->
+    <div class="container p-3 my-3 text-primary text-center "><!--First Container under body tag start-->
+       
+        <hr>
+        <div class="row"><!--2nd row under 1st container start-->
+            
+            <div class="col-md-12"><!--2nd col under 2nd row start-->
+                <p class="h1"> <b>Simulation </b> </p>
+            </div><!--2nd col under 2nd row end-->
+           
+        </div><!--2nd row under 1st container end-->
+        <hr>
+       
+    </div><!--First Container under body tag end-->
+    
+   
+	
+    <div class="container p-3 my-5 text-left border"><!--3rd Container under body tag start-->
+      <div class="row"><!--First row under 3rd container start-->
+        <div class="col-md-1"></div><!--First col under 3rd container start& end-->
+        <div class="col-md-10"><!--2nd col under 3rd container start-->
+            <p class="text-center bg-success"> <a class="nav-link" data-bs-toggle="tab"  id="instcontrol" style="background-color:#128BD9"  ><span class=" h3 text-dark"> Instructions </span></a>
+              <div id="inst" style="display:none">
+			  <ol>
+                      <p>In this experiment there are two parts.<br/>
+					  i) Check flatness of test objects<br/>
+					  ii) Optical flat as comparator
+					  <br/>
+					  <li> Click on 'Experiment Parts' button. Choose 'Check flatness of test objects'.</li><br/>
+					 
+					 <li>Now select 'Regular' after clicking on 'Choose test surface'.</li></br>
+					 
+					 <li>Click on 'Optical flat' button to place the optical flat on the test surface.</li><br/>
+					 
+					<li>Switch on the monochromatic light source by clicking on the toggle switch and observe the fringes appeared. They are
+					 equispaced regular light and dark lines, indicating tentatively flat surface.</li><br/>
+
+					 <li>Switch off the light source. Check flatness of other test surfaces (Concave,Convex) similarly.</li><br/>
+					 
+					 <li> Click on 'Experiment Parts' button again. Choose 'Optical flat as comparator'.</li><br/>
+
+					 <li> Select 'Master gauge' and 'Sample slip gauge1' after clicking on 'Choose test surface'. 
+					 They will be in the flat platform of the light source setup. Each of them having width of 15 mm, kept at a distance of 30 mm from each other.</li><br/>
+					 
+					 <li>Click on 'Optical flat' button to place the optical flat on the test surface.</li><br/>
+					 
+					 <li>Switch on the monochromatic light source by clicking on the toggle switch and observe the fringes appeared.
+					 the total number of fringes ( n ) will be shown in corresponding box. Switch off the light.</li><br/>
+					 
+					 <li>Click on 'Calculate' to get the true height of the sample gauge ( mm ).</li><br/>
+
+					 <li>Click on 'Table' at the bottom of the page to see the observation table and click on 'Add to Table' button to fill the first row of the observation table.</li><br/> 
+					 
+					 <li>Choose 'Sample slip gauge2', follow steps 9-10 and click on 'Add to Table' button again to get the second observation.</li><br/>
+						
+					<li>Similarly follow steps 9-10 and click on 'Add to Table' button again to get another three observations for other 
+					three sample slip gauges.</li><br/>
+
+					 
+					<br/><br/>
+					</ol>
+					
+		   </div>
+            </p> 
+          </div><!--2nd col under 3rd container end-->
+		  
+        <div class="col-md-1"></div><!--3rd col under 3rd container start& end-->
+      </div><!--First row under 3rd container end-->
+    </div><!--3rd Container under body tag end-->
+	
+    <div class="container p-3 my-5 text-center border" id="canvas" ><!--Fourth container under body tag start-->
+	
+	<div class="row my-5 gy-2">
+	
+	<div class="col-md-12">
+	
+	<div class = "btn-group">
+	
+	<!-- <div class ="p-2"> -->
+	<div class="dropdown p-2">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Experiment Parts
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" onclick="seudovalue1()">Check flatness of test objects</a></li>
+    <li><a class="dropdown-item" onclick="seudovalue2()">Optical flat as comparator</a></li>
+  </ul>
+</div>
+
+
+  <button class="btn btn-secondary " type="button" onclick ="flat1()" >
+    Optical flat
+  </button>
+ 
+
+<div class="dropdown p-2">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+    Choose test surface
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" onclick="obj1()">Regular</a></li>
+    <li><a class="dropdown-item" onclick="obj12()">Concave</a></li>
+	<li><a class="dropdown-item" onclick="obj13()">Convex</a></li>
+  </ul>
+</div>
+
+</div>
+
+<input type="number" id="seudobox" value="1" min="1" max="2" style="visibility:hidden">
+	<input type="number" id="chkobj" value="" min="1" max="6" style="visibility:hidden">
+	<input type="number" id="of1" value="0" style="visibility:hidden"/>
+	
+	</div>
+	</div>
+	
+			<div class="row ">
+			<div class="col-md-12">
+			
+			<div   class="img-container">			
+			
+			<img  src="./images/setup2.png" >
+			
+			<img id="light" src="./images/sodiumL2.png" >
+			<img id="lightray" src="./images/light_ray.png" >
+			<img id="sw" src="./images/tsw_off.png" onclick="onoff()" >
+			
+			<img id="opticalF" src="./images/regular.png" onclick="">
+			<img id="fringe" src="./images/fr1.png" onclick="">
+			<img id="blkobj" src="./images/tobj.png" onclick="">
+			<img id="mgauge" src="./images/masterGauge.png" onclick="">
+			<img id="sgauge" src="./images/sampleGauge.png" onclick="">
+			
+			</div>
+			
+	</div>
+
+	</div>
+	
+	
+          <!-- Code End here-->
+        </div><!--Fourth container under body tag end-->
+          
+     
+    <div class="container p-3 my-5 text-primary text-center border"><!--Last and fifth container under body tag start-->
+      <div class="row">
+        <footer>
+          <div class="row ce">
+            <div class="col-sm-12">
+              <p class="h5"><i> Copyright ©2022 <a href="http://vlabs.iitkgp.ac.in/vlt/">Virtual Labs IIT Kharagpur</a> </i><br><br>
+              <a href="../../license/index.html" target="_blank"> Licensing Terms </a>
+            </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+  </div><!--Last and fifth container under body tag end-->
+  
+  
+
+<script src="../assets/js/iframeResize.js"></script></body><!--body tag end-->
+
+ 
+</html><!--html tag end-->
