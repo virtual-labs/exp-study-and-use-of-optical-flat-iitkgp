@@ -1,6 +1,6 @@
 ## Theory
 
-Optical flats are precision optical components used in interferometry for measuring the flatness of surfaces. These devices are crucial in quality control and precision manufacturing processes, inspecting critical components like mirrors, lenses, semiconductor wafers, etc. These optical flats are usually made of polished glass with high-quality coatings. Its thickness ranges from 8 to 10 mm and diameter ranges from 25 to 300 mm. Its precision is due to its perfect flatness and ability to form interference patterns when in touch with another flat surface. Interference patterns are created when light reflects off two surfaces- the reference surface and the test surface. The resulting interference pattern reveals the deviations in the flatness of the test surface.
+Optical flats are precision optical components used for measuring the flatness of surfaces. These devices are crucial in quality control and precision manufacturing processes, for e.g., inspecting critical components like mirrors, lenses, semiconductor wafers, etc. These optical flats are usually made of polished glass with high-quality coatings. Its thickness ranges from 8 to 10 mm, and its diameter ranges from 25 to 300 mm. Its precision is due to its perfect flatness and ability to form interference patterns when placed above another flat surface. Interference patterns are created when light reflects off two surfaces- the reference surface and the test surface. The resulting interference pattern reveals the deviations in the flatness of the test surface.
 
 When two flat surfaces, an optical flat, and a test surface, come in contact, a thin gap is formed between them. This gap is very narrow and usually in nanometres. When a monochromatic light wave encounters an optical flat, it is partially transmitted and partially reflected. These two components of the wavefront then travel different paths. The interference between the reflected and transmitted waves results in a pattern of alternating bright and dark fringes, known as interference fringes. When the distance travelled by the light between the optical flat and the test surface is an odd multiple of (&lambda;/2) then destructive interference occurs. 
 
@@ -23,7 +23,7 @@ Figure 2 shows different fringes for different test surfaces. When the test surf
 Generally, Optical flats are used in the metrology and measurements laboratories to determine the flatness of the slip gauges. If the variation in the height between the master gauge and the sample gauge is not within the tolerance limit, then those slip gauges are discarded and cannot be used for precision measurements. This difference in height (&Delta;H) can be calculated by using optical flat as shown in figure 3 below. 
 				
 <div align="center">
-<img src="images/figure2.png" class="img-fluid">
+<img src="images/fig_3.png" class="img-fluid">
 
 Fig. 3 Optical flat as comparator
 </div>

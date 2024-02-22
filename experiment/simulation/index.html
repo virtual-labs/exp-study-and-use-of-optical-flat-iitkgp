@@ -88,19 +88,21 @@
 					  <br/>
 					  <li> Click on 'Experiment Parts' button. Choose 'Check flatness of test objects'.</li><br/>
 					 
-					 <li>Now select 'Test surface 1' after clicking on 'Choose test surface'.</li></br>
+					 <li>Now select 'Regular' after clicking on 'Choose test surface'.</li></br>
 					 
-					 <li>Select 'Regular' after clicking on 'Choose optical flat'.</li><br/>
+					 <li>Click on 'Optical flat' button to place the optical flat on the test surface.</li><br/>
 					 
 					<li>Switch on the monochromatic light source by clicking on the toggle switch and observe the fringes appeared. They are
 					 equispaced regular light and dark lines, indicating tentatively flat surface.</li><br/>
 
-					 <li>Switch off the light source. Check flatness of other surfaces with different optical flats similarly.</li><br/>
+					 <li>Switch off the light source. Check flatness of other test surfaces (Concave,Convex) similarly.</li><br/>
 					 
-					 <li> Click on 'Experiment Parts' button again. Choose 'Optical flat as comparator'. A master gauge and a sample slip gauge will be there
-            in the flat platform of the light source setup. Each of them having width of 15 mm, kept at a distance of 30 mm from each other.</li><br/>
+					 <li> Click on 'Experiment Parts' button again. Choose 'Optical flat as comparator'.</li><br/>
+
+					 <li> Select 'Master gauge' and 'Sample slip gauge1' after clicking on 'Choose test surface'. 
+					 They will be in the flat platform of the light source setup. Each of them having width of 15 mm, kept at a distance of 30 mm from each other.</li><br/>
 					 
-					 <li>Select 'Regular' after clicking on 'Choose optical flat'.</li><br/>
+					 <li>Click on 'Optical flat' button to place the optical flat on the test surface.</li><br/>
 					 
 					 <li>Switch on the monochromatic light source by clicking on the toggle switch and observe the fringes appeared.
 					 the total number of fringes ( n ) will be shown in corresponding box. Switch off the light.</li><br/>
@@ -109,9 +111,10 @@
 
 					 <li>Click on 'Table' at the bottom of the page to see the observation table and click on 'Add to Table' button to fill the first row of the observation table.</li><br/> 
 					 
-					 <li>Again follow steps 8-9 and click on 'Add to Table' button again to get the second observation.</li><br/>
+					 <li>Choose 'Sample slip gauge2', follow steps 9-10 and click on 'Add to Table' button again to get the second observation.</li><br/>
 						
-					<li>Similarly follow steps 8-9 and click on 'Add to Table' button again to get another three observations.</li><br/>
+					<li>Similarly follow steps 9-10 and click on 'Add to Table' button again to get another three observations for other 
+					three sample slip gauges.</li><br/>
 
 					 
 					<br/><br/>
@@ -130,8 +133,6 @@
 	<div class="row my-5 gy-2">
 	
 	<div class="col-md-12">
-	<input type="number" id="seudobox" value="1" min="1" max="2" style="visibility:hidden">
-	<input type="number" id="chkobj" value="" min="1" max="3" style="visibility:hidden">
 	
 	<div class = "btn-group">
 	
@@ -146,31 +147,28 @@
   </ul>
 </div>
 
-<div class="dropdown p-2">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
-    Choose optical flat
+
+  <button class="btn btn-secondary " type="button" onclick ="flat1()" >
+    Optical flat
   </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" onclick="flat1()">Regular</a></li>
-    <li><a class="dropdown-item" onclick="flat2()">Convex</a></li>
-	<li><a class="dropdown-item" onclick="flat3()">Concave</a></li>
-  </ul>
-</div>
+ 
 
 <div class="dropdown p-2">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
     Choose test surface
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" onclick="obj1()">Test surface 1</a></li>
-    <li><a class="dropdown-item" onclick="obj2()">Master gauge</a></li>
-	<li><a class="dropdown-item" onclick="obj3()">Sample slip gauge</a></li>
+    <li><a class="dropdown-item" onclick="obj1()">Regular</a></li>
+    <li><a class="dropdown-item" onclick="obj12()">Concave</a></li>
+	<li><a class="dropdown-item" onclick="obj13()">Convex</a></li>
   </ul>
 </div>
 
-
 </div>
 
+<input type="number" id="seudobox" value="1" min="1" max="2" style="visibility:hidden">
+	<input type="number" id="chkobj" value="" min="1" max="6" style="visibility:hidden">
+	<input type="number" id="of1" value="0" style="visibility:hidden"/>
 	
 	</div>
 	</div>
