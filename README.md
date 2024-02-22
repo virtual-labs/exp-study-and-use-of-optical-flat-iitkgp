@@ -12,7 +12,7 @@
 
 ### About the Experiment
 
-Optical flats are precision optical components used in interferometry for measuring the flatness of surfaces. These devices are crucial in quality control and precision manufacturing processes, inspecting critical components like mirrors, lenses, semiconductor wafers, etc.
+Optical flats are precision optical components used for measuring the flatness of surfaces. These devices are crucial in quality control and precision manufacturing processes, for e.g., inspecting critical components like mirrors, lenses, semiconductor wafers, etc.
 
 Generally, Optical flats are used in the metrology and measurements laboratories to determine the flatness of the slip gauges. 
 

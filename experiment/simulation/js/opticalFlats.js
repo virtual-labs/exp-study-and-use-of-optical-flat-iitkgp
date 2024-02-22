@@ -43,9 +43,15 @@ document.getElementById('sw').src = "./images/tsw_on.png";
 $('#light').css('display','block');	
 $('#lightray').css('display','block');
 
-if(document.getElementById('seudobox').value == 1){
+if(document.getElementById('seudobox').value == 1 && document.getElementById('of1').value == 1){
 if(document.getElementById('chkobj').value == 1){
 	fringe1();
+}
+if(document.getElementById('chkobj').value == 4){
+	fringe12();
+}
+if(document.getElementById('chkobj').value == 5){
+	fringe13();
 }
 if(document.getElementById('chkobj').value == 2){
 	fringe2();
@@ -55,7 +61,7 @@ if(document.getElementById('chkobj').value == 3){
 }
 }	
 
-if(document.getElementById('seudobox').value == 2){
+if(document.getElementById('seudobox').value == 2 && document.getElementById('of2').value == 1){
 	showfringe();
 	
 }
@@ -67,19 +73,30 @@ document.getElementById('sw').src = "./images/tsw_off.png";
 $('#light').css('display','none');	
 $('#lightray').css('display','none');
 
-if(document.getElementById('seudobox').value == 1){
+if(document.getElementById('seudobox').value == 1 && document.getElementById('of1').value == 1){
  if(document.getElementById('chkobj').value == 1){
-	document.getElementById('fringe').classList.remove("fringe1");	
+	document.getElementById('fringe').classList.remove("fringe1");
+	document.getElementById('fringe').style.display ="none";
+}
+if(document.getElementById('chkobj').value == 4){
+	document.getElementById('fringe').classList.remove("fringe1");
+	document.getElementById('fringe').style.display ="none";
+}
+if(document.getElementById('chkobj').value == 5){
+	document.getElementById('fringe').classList.remove("fringe1");
+	document.getElementById('fringe').style.display ="none";
 }
 if(document.getElementById('chkobj').value == 2){
-	document.getElementById('fringe').classList.remove("fringe1");	
+	document.getElementById('fringe').classList.remove("fringe1");
+	document.getElementById('fringe').style.display ="none";
 }
  if(document.getElementById('chkobj').value == 3){
-	document.getElementById('fringe').classList.remove("fringe1");	
+	document.getElementById('fringe').classList.remove("fringe1");
+	document.getElementById('fringe').style.display ="none";
 }	 
 }
 
-if(document.getElementById('seudobox').value == 2){
+if(document.getElementById('seudobox').value == 2 && document.getElementById('of2').value == 1){
 	document.getElementById('patternL').classList.remove("fringe2");
 	document.getElementById('patternR').classList.remove("fringe2");
 	document.getElementById('patternL').style.display = "none";
@@ -96,34 +113,89 @@ $('#mgauge').css('display','none');
 $('#sgauge').css('display','none');
 $('#chkobj').val(1);
 }
+function obj12(){	
+$('#blkobj').css('display','block');
+document.getElementById('blkobj').src = "./images/concave.png";
+$('#mgauge').css('display','none');
+$('#sgauge').css('display','none');
+$('#chkobj').val(4);
+}
+function obj13(){	
+$('#blkobj').css('display','block');
+document.getElementById('blkobj').src = "./images/convex.png";
+$('#mgauge').css('display','none');
+$('#sgauge').css('display','none');
+$('#chkobj').val(5);
+}
+
 
 function obj2(){	
-$('#blkobj').css('display','none');
-$('#mgauge').css('display','block');
-$('#sgauge').css('display','none');
+
+$('#mgauge2').css('display','block');
+//$('#sgauge2').css('display','none');
 $('#chkobj').val(2);
 }
 
 function obj3(){	
-$('#tobj').css('display','none');
-$('#mgauge').css('display','none');
-$('#sgauge').css('display','block');
-$('#chkobj').val(3);
+
+//$('#mgauge2').css('display','none');
+$('#sgauge2').css('display','block');
+$('#hchk').val(1);
+
 }
 
-///choose flats
+function obj31(){	
+
+//$('#mgauge2').css('display','none');
+$('#sgauge2').css('display','block');
+document.getElementById('sgauge2').style.height = 19.1 + '%';
+$('#hchk').val(2);
+
+}
+
+function obj32(){	
+
+//$('#mgauge2').css('display','none');
+$('#sgauge2').css('display','block');
+document.getElementById('sgauge2').style.height = 19.2 + '%';
+$('#hchk').val(3);
+
+}
+
+function obj33(){	
+
+//$('#mgauge2').css('display','none');
+$('#sgauge2').css('display','block');
+document.getElementById('sgauge2').style.height = 19.3 + '%';
+$('#hchk').val(4);
+
+}
+
+function obj34(){	
+
+//$('#mgauge2').css('display','none');
+$('#sgauge2').css('display','block');
+document.getElementById('sgauge2').style.height = 19.5 + '%';
+$('#hchk').val(5);
+
+}
+
+
+ ///choose flats
 
 function flat1(){
 if(document.getElementById('seudobox').value==1){	
 $('#opticalF').attr('src','./images/regular.png');
 $('#opticalF').css('display','block');
+document.getElementById('of1').value = 1;
 }
 if(document.getElementById('seudobox').value==2){	
 $('#opticalF2').attr('src','./images/regular.png');
 $('#opticalF2').css('display','block');
+document.getElementById('of2').value = 1;
 }
 }
-
+/*
 function flat2(){	
 if(document.getElementById('seudobox').value==1){
 $('#opticalF').attr('src','./images/concave.png');
@@ -144,7 +216,7 @@ if(document.getElementById('seudobox').value==2){
 $('#opticalF2').attr('src','./images/convex.png');
 $('#opticalF2').css('display','block');
 }
-}
+} */
 
 function fringe1(){///round fringe
 	
@@ -162,6 +234,50 @@ function fringe1(){///round fringe
 	alert('Tentatively flat surface');	
 	},5000); 
 }
+function fringe12(){///round fringe concave
+	
+	$('#fringe').attr('src','./images/fr_concave.png');	
+	
+	setTimeout(function(){
+	document.getElementById('fringe').classList.add("fringe1");	
+	$('#fringe').css('width','22%');
+	$('#fringe').css('left','41.5%');
+	$('#fringe').css('top','65.5%');
+	$('#fringe').css('display','block');
+	 },3000);
+	 
+	setTimeout(function(){		
+	alert('Concave surface');	
+	},5000); 
+}
+function fringe13(){///round fringe convex
+	
+	$('#fringe').attr('src','./images/fr_convex.png');	
+	
+	setTimeout(function(){
+	document.getElementById('fringe').classList.add("fringe1");	
+	$('#fringe').css('width','22%');
+	$('#fringe').css('left','41.5%');
+	$('#fringe').css('top','65.5%');
+	$('#fringe').css('display','block');
+	 },3000);
+	 
+	setTimeout(function(){		
+	alert('Convex surface');	
+	},5000); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 function fringe2(){///mastergauge fringe
 	
@@ -203,7 +319,8 @@ function showfringe(){
 	
 counter++;
 
-if(counter==1){
+//if(counter==1){
+	if(document.getElementById('hchk').value == 1){
 	$('#patternL').attr('src','./images/ptrn2.png');
 	$('#patternR').attr('src','./images/ptrn1.png');
 	
@@ -211,12 +328,19 @@ if(counter==1){
 	document.getElementById('patternL').classList.add("fringe2");
 	document.getElementById('patternR').classList.add("fringe2");
 	$('#patternL').css('display','block');
+	$('#patternL').css('width','5%');
+	$('#patternL').css('left','39%');
+	$('#patternL').css('height','14%');
+	
 	$('#patternR').css('display','block');
+	$('#patternR').css('width','5%');
+	$('#patternR').css('left','59%');
 	$('#n').val(5);
 	 },3000);
 }	
 	
-else if(counter==2){
+//else if(counter==2){
+else if(document.getElementById('hchk').value == 2){
 	$('#patternL').attr('src','./images/ptrn3.png');
 	$('#patternR').attr('src','./images/ptrn3.png');
 	
@@ -224,12 +348,19 @@ else if(counter==2){
 	document.getElementById('patternL').classList.add("fringe2");
 	document.getElementById('patternR').classList.add("fringe2");
 	$('#patternL').css('display','block');
+	$('#patternL').css('width','5%');
+	$('#patternL').css('left','39%');
+	$('#patternL').css('height','14%');
+	
 	$('#patternR').css('display','block');
+	$('#patternR').css('width','5%');
+	$('#patternR').css('left','59%');
 	$('#n').val(10);
 	 },3000);
 }	
 
-else if(counter==3){
+//else if(counter==3){
+	else if(document.getElementById('hchk').value == 3){
 	$('#patternL').attr('src','./images/ptrn4.png');
 	$('#patternR').attr('src','./images/ptrn3.png');
 	
@@ -237,12 +368,18 @@ else if(counter==3){
 	document.getElementById('patternL').classList.add("fringe2");
 	document.getElementById('patternR').classList.add("fringe2");
 	$('#patternL').css('display','block');
+	$('#patternL').css('width','7%');
+	$('#patternL').css('left','38%');
+	$('#patternL').css('height','15%');
 	$('#patternR').css('display','block');
+	$('#patternR').css('width','5%');
+	$('#patternR').css('left','59%');
 	$('#n').val(15);
 	 },3000);
 }	
 	
-else if(counter==4){
+//else if(counter==4){
+	else if(document.getElementById('hchk').value == 4){
 	$('#patternL').attr('src','./images/ptrn4.png');
 	$('#patternR').attr('src','./images/ptrn4.png');
 	
@@ -250,12 +387,19 @@ else if(counter==4){
 	document.getElementById('patternL').classList.add("fringe2");
 	document.getElementById('patternR').classList.add("fringe2");
 	$('#patternL').css('display','block');
+	$('#patternL').css('width','7%');
+	$('#patternL').css('left','38%');
+	$('#patternL').css('height','15%');
 	$('#patternR').css('display','block');
+	$('#patternR').css('width','7%');
+	$('#patternR').css('left','58%');
+	
 	$('#n').val(20);
 	 },3000);
 }	
 	
-else if(counter==5){
+//else if(counter==5){
+	else if(document.getElementById('hchk').value == 5){
 	$('#patternL').attr('src','./images/ptrn4.png');
 	$('#patternR').attr('src','./images/ptrn4.png');
 	
@@ -263,14 +407,19 @@ else if(counter==5){
 	document.getElementById('patternL').classList.add("fringe2");
 	document.getElementById('patternR').classList.add("fringe2");
 	$('#patternL').css('display','block');
+	$('#patternL').css('width','7%');
+	$('#patternL').css('left','38%');
+	$('#patternL').css('height','15%');
 	$('#patternR').css('display','block');
+	$('#patternR').css('width','7%');
+	$('#patternR').css('left','58%');
 	$('#n').val(25);
 	 },3000);
 }	
 	
-else if(counter==6){
+/* else if(counter==6){
 	counter =0;
-}	
+} */	
 	
 	
 }

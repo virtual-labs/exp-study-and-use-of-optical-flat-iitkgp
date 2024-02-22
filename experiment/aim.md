@@ -1,4 +1,4 @@
 ## Aim of the experiment
 
-Study and use of Optical flats
+To study the principle of optical flats for measuring the flatness.
                 
