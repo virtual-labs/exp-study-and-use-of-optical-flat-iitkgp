@@ -5,6 +5,7 @@
 <img class="img-fluid"  src="./images/conn.png" alt=""><br> 
 Figure 1. Gear tooth vernier caliper with spur gear          
 </div> -->
+**Steps to perform the simulation**
 
 In this experiment there are two parts.
 
