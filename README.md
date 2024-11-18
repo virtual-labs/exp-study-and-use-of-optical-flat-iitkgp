@@ -20,7 +20,7 @@ Generally, Optical flats are used in the metrology and measurements laboratories
 <div align="center">
 <img class="img-fluid"  src="experiment/images/figure1.png" alt="">
 
-Fig. 1 Use of Optical flats and test surface           
+<b>Fig. 1 Use of Optical flats and test surface</b>          
 </div>
 
 <b>Subject matter expertise | <b> **Dr. Poonam Sundriyal**

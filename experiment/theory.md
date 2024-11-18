@@ -7,7 +7,7 @@ When two flat surfaces, an optical flat, and a test surface, come in contact, a 
 <div align="center">
 <img src="images/figure1.png" class="img-fluid">
 
-Fig. 1 Use of Optical flats and test surface
+<b>Fig. 1 Use of Optical flats and test surface</b>
 </div>
 
 In figure 1, the distance travelled by light wave between the optical flat and test surface at two different locations is (‘uvw’ = &lambda; / 2 and ‘xyz’ = 3 &lambda; / 2 ) is an odd multiple of &lambda; / 2 and thus destructive interference will occur forming dark fringes. Based on the level of flatness of the test surfaces, the orientation of these dark and bright fringes will differ. 
@@ -15,7 +15,7 @@ In figure 1, the distance travelled by light wave between the optical flat and t
 <div align="center">
 <img src="images/figure3.png" class="img-fluid">
 
-Fig. 2  a. Regular Fringes  b. Convex fringes  c. Concave fringes
+<b>Fig. 2  a. Regular Fringes  b. Convex fringes  c. Concave fringes</b>
 </div>
 
 Figure 2 shows different fringes for different test surfaces. When the test surface is perfectly flat, then regular fringes are formed as shown in figure 2a, in case of curved surfaces two different types of fringe orientation can be observed. If the surface is convex and high in centre, then fringes are curved and away from line of contact as shown in figure 2b and if the surface is concave and low in the centre then fringes are curved and towards the line of contact as shown in figure 2c.
@@ -25,7 +25,7 @@ Generally, Optical flats are used in the metrology and measurements laboratories
 <div align="center">
 <img src="images/fig_3.png" class="img-fluid">
 
-Fig. 3 Optical flat as comparator
+<b>Fig. 3 Optical flat as comparator</b>
 </div>
 
 In figure 3, two gauges of width, ‘L,’ and the consecutive distance between them is G. An optical flat is placed on both gauges, and &Delta;H is calculated using the following expression.
