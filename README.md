@@ -6,7 +6,7 @@
 
 <b>Discipline | <b> Mechanical Engineering 
 :--|:--|
-<b> Lab | <b> ** Metrology and Measurement Lab**
+<b> Lab | <b> ** Metrology and Measurement Laboratory**
 <b> Experiment|     <b> **Study and use of Optical flats and Experiment 6**
 
 
