@@ -496,7 +496,7 @@ function calculate(){
 	var G = 30;
 	var L =15;
 	var delH = math.multiply(math.multiply(waven,math.divide(lamda,2)),math.divide(G,L));
-	var ActH = math.add(20,delH).toFixed(2);
+	var ActH = math.add(20,delH).toFixed(3);
 	$('#sgh').val(ActH);
 	percentErr = math.multiply(math.divide(delH,20),100).toFixed(4);
 }
