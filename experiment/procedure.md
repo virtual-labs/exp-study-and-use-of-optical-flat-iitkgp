@@ -1,10 +1,5 @@
 ## Procedure
 
-
-<!-- <div align="center">
-<img class="img-fluid"  src="./images/conn.png" alt=""><br> 
-Figure 1. Gear tooth vernier caliper with spur gear          
-</div> -->
 **Steps to perform the simulation**
 
 In this experiment there are two parts.
@@ -13,15 +8,22 @@ i) Check flatness of test objects
 
 ii) Optical flat as comparator
 
+To follow instructions on the simulation page click on the blue Instructions tab there.
+
+<div align="center">
+<img class="img-fluid"  src="./images/proce.png" alt=""><br> 
+<b>Fig. 1. Study of Optical flats simulation interface</b>          
+</div>
+
 1. Click on 'Experiment Parts' button. Choose 'Check flatness of test objects'.
 
-2. Now select 'Regular' after clicking on 'Choose test surface'.
+2. Now select 'Surface 1' after clicking on 'Choose test surface'.
 
 3. Click on 'Optical flat' button to place the optical flat on the test surface.
 
 4. Switch on the monochromatic light source by clicking on the toggle switch and observe the fringes appeared. They are equispaced regular light and dark lines, indicating tentatively flat surface.
 
-5. Switch off the light source. Check flatness of other test surfaces (Concave,Convex) similarly.
+5. Switch off the light source. Check the flatness of other test surfaces (Surface 2, Surface 3) similarly.
 
 6. Click on 'Experiment Parts' button again. Choose 'Optical flat as comparator'.
 
@@ -31,11 +33,11 @@ They will be in the flat platform of the light source setup. Each of them having
 8. Click on 'Optical flat' button to place the optical flat on the test surface.
 
 9. Switch on the monochromatic light source by clicking on the toggle switch and observe the fringes appeared.
-the total number of fringes ( n ) will be shown in corresponding box. Switch off the light.
+the total number of fringes (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">n</span>) will be shown in corresponding box. Switch off the light.
 
-10. Click on 'Calculate' to get the true height of the sample gauge ( mm ).
+10. Click on 'Calculate' to get the true height of the sample gauge (mm).
 
-11. Click on 'Table' at the bottom of the page to see the observation table and click on 'Add to Table' button to fill the first row of the observation table.
+11. Click on 'Table' at the bottom of the page to see the observation table and click on 'Add to Table' button to fill the first row of the observation table. Switch off the light.
 
 12. Choose 'Sample slip gauge2', follow steps 9-10 and click on 'Add to Table' button again to get the second observation.
 
