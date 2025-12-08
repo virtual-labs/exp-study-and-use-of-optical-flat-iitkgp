@@ -23,7 +23,7 @@ Fig. 2 shows different fringes for different test surfaces. When the test surfac
 Generally, Optical flats are used in the metrology and measurements laboratories to determine the flatness of the slip gauges. If the variation in the height between the master gauge and the sample gauge is not within the tolerance limit, then those slip gauges are discarded and cannot be used for precision measurements. This difference in height (&Delta;<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">H</span>) can be calculated by using optical flat as shown in Fig. 3 below. 
 				
 <div align="center">
-<img src="images/fig_3.png" class="img-fluid">
+<img src="images/fig_3.png" style="width:80%">
 
 <b>Fig. 3 Optical flat as comparator</b>
 </div>

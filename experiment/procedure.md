@@ -23,7 +23,7 @@ To follow instructions on the simulation page click on the blue Instructions tab
 
 4. Switch on the monochromatic light source by clicking on the toggle switch and observe the fringes appeared. They are equispaced regular light and dark lines, indicating tentatively flat surface.
 
-5. Switch off the light source. Check the flatness of other test surfaces (Surface 2, Surface 3) similarly.
+5. Switch off the light source. Check the flatness of other test surfaces (Surface 2, and Surface 3) similarly.
 
 6. Click on 'Experiment Parts' button again. Choose 'Optical flat as comparator'.
 
