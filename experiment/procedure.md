@@ -42,3 +42,5 @@ the total number of fringes (<span style="font-family:'Bodoni MT';font-style:ita
 12. Choose 'Sample slip gauge2', follow steps 9-10 and click on 'Add to Table' button again to get the second observation.
 
 13. Similarly follow steps 9-10 and click on 'Add to Table' button again to get another three observations for other three sample slip gauges.
+
+14. Click on 'Clear' button. Switch off the light.

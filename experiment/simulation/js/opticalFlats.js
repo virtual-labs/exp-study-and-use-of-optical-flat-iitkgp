@@ -66,6 +66,7 @@ document.getElementById('cts').disabled = true;
 if(document.getElementById('seudobox').value == 2 && document.getElementById('of2').value == 1){
 	showfringe();
 	document.getElementById('cts2').disabled = true;
+	document.getElementById('calc').disabled = false;
 }
 }	
 
@@ -272,17 +273,6 @@ function fringe13(){///round fringe convex
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 function fringe2(){///mastergauge fringe
 	
 	$('#fringe').attr('src','./images/fr2.png');	
@@ -332,13 +322,14 @@ counter++;
 	document.getElementById('patternL').classList.add("fringe2");
 	document.getElementById('patternR').classList.add("fringe2");
 	$('#patternL').css('display','block');
-	$('#patternL').css('width','5%');
-	$('#patternL').css('left','39%');
+	$('#patternL').css('width','5.6%');
+	$('#patternL').css('left','40.5%');
 	$('#patternL').css('height','14%');
 	
 	$('#patternR').css('display','block');
-	$('#patternR').css('width','5%');
-	$('#patternR').css('left','59%');
+	$('#patternR').css('width','5.6%');
+	$('#patternR').css('left','55%');
+	$('#patternR').css('height','16%');
 	$('#n').val(5);
 	 },3000);
 }	
@@ -352,13 +343,14 @@ else if(document.getElementById('hchk').value == 2){
 	document.getElementById('patternL').classList.add("fringe2");
 	document.getElementById('patternR').classList.add("fringe2");
 	$('#patternL').css('display','block');
-	$('#patternL').css('width','5%');
-	$('#patternL').css('left','39%');
+	$('#patternL').css('width','5.6%');
+	$('#patternL').css('left','40.5%');
 	$('#patternL').css('height','14%');
 	
 	$('#patternR').css('display','block');
-	$('#patternR').css('width','5%');
-	$('#patternR').css('left','59%');
+	$('#patternR').css('width','5.6%');
+	$('#patternR').css('left','55.2%');
+	$('#patternR').css('height','16%');
 	$('#n').val(10);
 	 },3000);
 }	
@@ -372,12 +364,14 @@ else if(document.getElementById('hchk').value == 2){
 	document.getElementById('patternL').classList.add("fringe2");
 	document.getElementById('patternR').classList.add("fringe2");
 	$('#patternL').css('display','block');
-	$('#patternL').css('width','7%');
-	$('#patternL').css('left','38%');
+	$('#patternL').css('width','6.4%');
+	$('#patternL').css('left','40%');
 	$('#patternL').css('height','15%');
+	
 	$('#patternR').css('display','block');
-	$('#patternR').css('width','5%');
-	$('#patternR').css('left','59%');
+	$('#patternR').css('width','5.6%');
+	$('#patternR').css('left','55.2%');
+	$('#patternR').css('height','16%');
 	$('#n').val(15);
 	 },3000);
 }	
@@ -391,12 +385,14 @@ else if(document.getElementById('hchk').value == 2){
 	document.getElementById('patternL').classList.add("fringe2");
 	document.getElementById('patternR').classList.add("fringe2");
 	$('#patternL').css('display','block');
-	$('#patternL').css('width','7%');
-	$('#patternL').css('left','38%');
+	$('#patternL').css('width','6.4%');
+	$('#patternL').css('left','40%');
 	$('#patternL').css('height','15%');
+	
 	$('#patternR').css('display','block');
-	$('#patternR').css('width','7%');
-	$('#patternR').css('left','58%');
+	$('#patternR').css('width','5.8%');
+	$('#patternR').css('left','55%');
+	$('#patternR').css('height','16%');
 	
 	$('#n').val(20);
 	 },3000);
@@ -411,12 +407,14 @@ else if(document.getElementById('hchk').value == 2){
 	document.getElementById('patternL').classList.add("fringe2");
 	document.getElementById('patternR').classList.add("fringe2");
 	$('#patternL').css('display','block');
-	$('#patternL').css('width','7%');
-	$('#patternL').css('left','38%');
+	$('#patternL').css('width','6.4%');
+	$('#patternL').css('left','40%');
 	$('#patternL').css('height','15%');
+	
 	$('#patternR').css('display','block');
-	$('#patternR').css('width','7%');
-	$('#patternR').css('left','58%');
+	$('#patternR').css('width','5.8%');
+	$('#patternR').css('left','55%');
+	$('#patternR').css('height','16%');
 	$('#n').val(25);
 	 },3000);
 }	
@@ -442,7 +440,7 @@ var table;
 //------------------------------------------------- Table Creation -----------------------------------------------//
 function CreateTable() {///thickness
 
-	
+	document.getElementById('clr').disabled = false;
     arr[0] = tabrowindex+1 ;
     arr[1] = $('#n').val();///math.divide(math.floor(math.multiply($('#t1').val(),1000)),1000);
     arr[2] = $('#sgh').val();///math.divide(math.floor(math.multiply($('#t2').val(),1000)),1000);
@@ -486,11 +484,15 @@ function Refresh(){///donot keep the name of the function as clear
 	//Dtable.style.display="none";
 	tabrowindex=0;
 	
+	document.getElementById('calc').disabled = true;
+	document.getElementById('att').disabled = true;
+	document.getElementById('clr').disabled = true;
 	
  }
 
 var percentErr;
 function calculate(){
+	document.getElementById('att').disabled = false;
 	var waven = $('#n').val();
 	var lamda = math.multiply(0.509,math.pow(10,-3));
 	var G = 30;
