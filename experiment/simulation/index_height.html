@@ -115,6 +115,8 @@
 						
 					<li>Similarly follow steps 9-10 and click on 'Add to Table' button again to get another three observations for other 
 					three sample slip gauges.</li><br/>
+					
+					<li>Click on 'Clear' button. Switch off the light.</li>
 
 					 
 					<br/><br/>
@@ -186,15 +188,15 @@
 			
 			<div class="card-body"  >
 					
-			<span class="card-text" >Total number of fringes (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">n</span>):&nbsp;<input  type="number" id="n" value="0" readonly=readonly style="width:20%;text-align:center"></span><br/><br/>
-			<span class="card-text">True height of sample gauge (mm):&nbsp;<input type="number" id="sgh" value="0" readonly=readonly  style="width:30%;text-align:center"></span><br/><br/>
-			<span class="card-text">wavelength of the light source (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">&lambda;</span>) = 0.509 &times; 10<sup>-3</sup> mm</span><br/><br/>
-			<span class="card-text">Standard height of Master gauge: 20 mm</span><br/><br/>
-			<span class="card-text">Gauge width (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">L</span>): 15 mm</span><br/><br/>
-			<span class="card-text">Consecutive distance between two gauges (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">G</span>): 30 mm</span><br/><br/>
-			<span class="card-text">Change in height (&Delta;<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">H</span>) = (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">n &lambda;</span>/2) (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">G/L</span>) mm</span><br/><br/>
+			<span class="card-text" style="position:absolute;left:30%">Total number of fringes (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">n</span>):</span>&nbsp;<input  type="number" id="n" value="0" readonly=readonly style="width:15%;text-align:center;position:absolute;left:55%"><br/><br/>
+			<span class="card-text" style="position:absolute;left:30%">True height of sample gauge (mm):</span>&nbsp;<input type="number" id="sgh" value="0" readonly=readonly  style="width:15%;text-align:center;position:absolute;left:55%"><br/><br/>
+			<span class="card-text" style="position:absolute;left:30%">wavelength of the light source (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">&lambda;</span>) = 0.509 &times; 10<sup>-3</sup> mm</span><br/><br/>
+			<span class="card-text" style="position:absolute;left:30%">Standard height of Master gauge: 20 mm</span><br/><br/>
+			<span class="card-text" style="position:absolute;left:30%">Gauge width (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">L</span>): 15 mm</span><br/><br/>
+			<span class="card-text" style="position:absolute;left:30%">Consecutive distance between two gauges (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">G</span>): 30 mm</span><br/><br/>
+			<span class="card-text" style="position:absolute;left:30%">Change in height (&Delta;<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">H</span>) = (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">n &lambda;</span>/2) (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">G/L</span>) mm</span><br/><br/>
 
-			<button  type="button"   class="btn btn-danger " onclick="calculate()" >Calculate</button>
+			<button  type="button" id="calc"  class="btn btn-danger " onclick="calculate()" disabled=disabled>Calculate</button>
 			</div></div></div>			
 			<div class="col-md-1"></div>
 						
@@ -234,9 +236,9 @@
 		
 			<div class="col-md-12 "><!--2nd col under 2nd row start -->	
 			
-		<button type="button"  class="btn btn-info " onclick="CreateTable()" >Add to Table</button>
+		<button type="button" id="att" class="btn btn-info " onclick="CreateTable()" disabled=disabled>Add to Table</button>
 	
-		<button type="button"   class="btn btn-danger " onclick="Refresh()" >Clear</button>
+		<button type="button" id="clr"  class="btn btn-danger " onclick="Refresh()" disabled=disabled>Clear</button>
 		</div>
 		</div> 
 		
