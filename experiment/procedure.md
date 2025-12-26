@@ -27,7 +27,7 @@ To follow instructions on the simulation page click on the blue Instructions tab
 
 6. Click on 'Experiment Parts' button again. Choose 'Optical flat as comparator'.
 
-7. Select 'Master gauge' and 'Sample slip gauge1' after clicking on 'Choose test surface'. 
+7. Click on 'Master gauge' and select 'Sample slip gauge1' after clicking on 'Choose test surface'. 
 They will be in the flat platform of the light source setup. Each of them having width of 15 mm, kept at a distance of 30 mm from each other.
 
 8. Click on 'Optical flat' button to place the optical flat on the test surface.
