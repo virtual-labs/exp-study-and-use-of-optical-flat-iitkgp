@@ -99,7 +99,7 @@
 					 
 					 <li> Click on 'Experiment Parts' button again. Choose 'Optical flat as comparator'.</li><br/>
 
-					 <li> Select 'Master gauge' and 'Sample slip gauge 1' after clicking on 'Choose test surface'. 
+					 <li> Click on 'Master gauge' and select 'Sample slip gauge 1' after clicking on 'Choose test surface'. 
 					 They will be in the flat platform of the light source setup. Each of them having width of 15 mm, kept at a distance of 30 mm from each other.</li><br/>
 					 
 					 <li>Click on 'Optical flat' button to place the optical flat on the test surface.</li><br/>
@@ -149,18 +149,17 @@
     <li><a class="dropdown-item" onclick="seudovalue2()">Optical flat as comparator</a></li>
   </ul>
 </div>
-
-<button class="btn btn-secondary " type="button" onclick ="flat1()" >
-    Optical flat
+<button class="btn btn-secondary " type="button" onclick ="obj2()" >
+    Master gauge
   </button>
- 
-<div class="dropdown p-2">
+  
+  <div class="dropdown p-2">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="cts2">
     Choose test surface
   </button>
   <ul class="dropdown-menu">
     
-    <li><a class="dropdown-item" onclick="obj2()">Master gauge</a></li>
+    <!-- <li><a class="dropdown-item" onclick="obj2()">Master gauge</a></li> -->
 	<li><a class="dropdown-item" onclick="obj3()">Sample slip gauge 1</a></li>
 	<li><a class="dropdown-item" onclick="obj31()">Sample slip gauge 2</a></li>
 	<li><a class="dropdown-item" onclick="obj32()">Sample slip gauge 3</a></li>
@@ -168,6 +167,12 @@
 	<li><a class="dropdown-item" onclick="obj34()">Sample slip gauge 5</a></li>
   </ul>
 </div>
+
+<button class="btn btn-secondary " type="button" onclick ="flat1()" >
+    Optical flat
+  </button>
+ 
+
 
   <input type="number" id="hchk" value="0" style="visibility:hidden"/>
   <input type="number" id="of2" value="0" style="visibility:hidden"/>
@@ -188,8 +193,8 @@
 			
 			<div class="card-body"  >
 					
-			<span class="card-text" style="position:absolute;left:30%">Total number of fringes (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">n</span>):</span>&nbsp;<input  type="number" id="n" value="0" readonly=readonly style="width:15%;text-align:center;position:absolute;left:55%"><br/><br/>
-			<span class="card-text" style="position:absolute;left:30%">True height of sample gauge (mm):</span>&nbsp;<input type="number" id="sgh" value="0" readonly=readonly  style="width:15%;text-align:center;position:absolute;left:55%"><br/><br/>
+			<span class="card-text" style="position:absolute;left:30%">Total number of fringes (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">n</span>):</span>&nbsp;<input  type="number" id="n" value="0" readonly=readonly style="width:15%;text-align:center;position:absolute;left:58%"><br/><br/>
+			<span class="card-text" style="position:absolute;left:30%">True height of sample gauge (mm):</span>&nbsp;<input type="number" id="sgh" value="0" readonly=readonly  style="width:15%;text-align:center;position:absolute;left:58%"><br/><br/>
 			<span class="card-text" style="position:absolute;left:30%">wavelength of the light source (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">&lambda;</span>) = 0.509 &times; 10<sup>-3</sup> mm</span><br/><br/>
 			<span class="card-text" style="position:absolute;left:30%">Standard height of Master gauge: 20 mm</span><br/><br/>
 			<span class="card-text" style="position:absolute;left:30%">Gauge width (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">L</span>): 15 mm</span><br/><br/>
