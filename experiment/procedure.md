@@ -19,7 +19,7 @@ To follow instructions on the simulation page click on the blue Instructions tab
 
 2. Now select 'Surface 1' after clicking on 'Choose test surface'.
 
-3. Click on 'Optical flat' button to place the optical flat on the test surface.
+3. Click on 'Place optical flat' button to place the optical flat above the chosen test surface.
 
 4. Switch on the monochromatic light source by clicking on the toggle switch and observe the fringes appeared. They are equispaced regular light and dark lines, indicating tentatively flat surface.
 
@@ -30,7 +30,7 @@ To follow instructions on the simulation page click on the blue Instructions tab
 7. Click on 'Master gauge' and select 'Sample slip gauge1' after clicking on 'Choose test surface'. 
 They will be in the flat platform of the light source setup. Each of them having width of 15 mm, kept at a distance of 30 mm from each other.
 
-8. Click on 'Optical flat' button to place the optical flat on the test surface.
+8. Click on 'Place optical flat' button to place the optical flat above the Master gauge and chosen test surface.
 
 9. Switch on the monochromatic light source by clicking on the toggle switch and observe the fringes appeared.
 the total number of fringes (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">n</span>) will be shown in corresponding box. Switch off the light.
