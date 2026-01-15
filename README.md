@@ -7,7 +7,7 @@
 <b>Discipline | <b> Mechanical Engineering 
 :--|:--|
 <b> Lab | <b> ** Metrology and Measurement Laboratory**
-<b> Experiment|     <b> **Study and use of Optical flats and Experiment 6**
+<b> Experiment|     <b> **Study and Use of Optical Flats and Experiment 6**
 
 
 ### About the Experiment
