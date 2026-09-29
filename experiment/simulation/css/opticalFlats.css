@@ -121,7 +121,7 @@ z-index: 2;
 
 @keyframes fringe2 {
   from {opacity: 0.1;}
-  to   {opacity: 0.4;}
+  to   {opacity: 0.6;}
 }	
 /*-------------------------------------------------------------------------*/	
 	
@@ -163,18 +163,18 @@ opacity: 0.7;
 }
 
 #mgauge2{
-display: block; 
+display: none; 
 position: absolute;
-left: 38%;
+left: 40%;
 top: 67.5%;
 /* height: 100%; */
 /* width: 25%; */
 z-index: 1;
 }
 #sgauge2{
-display: block;
+display: none;
 position: absolute;
-left: 59%;
+left: 55%;
 top: 66.5%;
 height: 19%;
 width: 6%;

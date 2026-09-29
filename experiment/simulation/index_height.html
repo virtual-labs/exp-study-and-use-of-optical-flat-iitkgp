@@ -88,35 +88,39 @@
 					  <br/>
 					  <li> Click on 'Experiment Parts' button. Choose 'Check flatness of test objects'.</li><br/>
 					 
-					 <li>Now select 'Test surface 1' after clicking on 'Choose test surface'.</li></br>
+					 <li>Now select 'Surface 1' after clicking on 'Choose test surface'.</li></br>
 					 
-					 <li>Select 'Regular' after clicking on 'Choose optical flat'.</li><br/>
+					 <li>Click on 'Place optical flat' button to place the optical flat above the chosen test surface.</li><br/>
 					 
 					<li>Switch on the monochromatic light source by clicking on the toggle switch and observe the fringes appeared. They are
 					 equispaced regular light and dark lines, indicating tentatively flat surface.</li><br/>
 
-					 <li>Switch off the light source. Check flatness of other surfaces with different optical flats similarly.</li><br/>
+					 <li>Switch off the light source. Check flatness of other test surfaces (Surface 2, and Surface 3) similarly.</li><br/>
 					 
-					 <li> Click on 'Experiment Parts' button again. Choose 'Optical flat as comparator'. A master gauge and a sample slip gauge will be there
-						in the flat platform of the light source setup. Each of them having width of 15 mm, kept at a distance of 30 mm from each other.</li><br/>
+					 <li> Click on 'Experiment Parts' button again. Choose 'Optical flat as comparator'.</li><br/>
+
+					 <li> Click on 'Master gauge' and select 'Sample slip gauge 1' after clicking on 'Choose test surface'. 
+					 They will be in the flat platform of the light source setup. Each of them having width of 15 mm, kept at a distance of 30 mm from each other.</li><br/>
 					 
-					 <li>Select 'Regular' after clicking on 'Choose optical flat'.</li><br/>
+					 <li>Click on 'Place optical flat' button to place the optical flat above the Master gauge and chosen test surface.</li><br/>
 					 
 					 <li>Switch on the monochromatic light source by clicking on the toggle switch and observe the fringes appeared.
-					 the total number of fringes ( n ) will be shown in corresponding box. Switch off the light.</li><br/>
+					 the total number of fringes (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">n</span>) will be shown in corresponding box. Switch off the light.</li><br/>
 					 
-					 <li>Click on 'Calculate' to get the true height of the sample gauge ( mm ).</li><br/>
+					 <li>Click on 'Calculate' to get the true height of the sample gauge (mm).</li><br/>
 
-					 <li>Click on 'Table' at the bottom of the page to see the observation table and click on 'Add to Table' button to fill the first row of the observation table.</li><br/> 
+					 <li>Click on 'Table' at the bottom of the page to see the observation table and click on 'Add to Table' button to fill the first row of the observation table. Switch off the light.</li><br/> 
 					 
-					 <li>Again follow steps 8-9 and click on 'Add to Table' button again to get the second observation.</li><br/>
+					 <li>Choose 'Sample slip gauge 2', follow steps 9-10 and click on 'Add to Table' button again to get the second observation.</li><br/>
 						
-					<li>Similarly follow steps 8-9 and click on 'Add to Table' button again to get another three observations.</li><br/>
+					<li>Similarly follow steps 9-10 and click on 'Add to Table' button again to get another three observations for other 
+					three sample slip gauges.</li><br/>
+					
+					<li>Click on 'Clear' button. Switch off the light.</li>
 
 					 
 					<br/><br/>
 					</ol>
-					
 		   </div>
             </p> 
           </div><!--2nd col under 3rd container end-->
@@ -131,7 +135,7 @@
 	
 	<div class="col-md-12">
 	<input type="number" id="seudobox" value="2" min="1" max="2" style="visibility:hidden">
-	<input type="number" id="chkobj" value="" min="1" max="3" style="visibility:hidden">
+	<input type="number" id="chkobj" value="" min="1" max="6" style="visibility:hidden">
 	
 	<div class = "btn-group">
 	
@@ -145,18 +149,33 @@
     <li><a class="dropdown-item" onclick="seudovalue2()">Optical flat as comparator</a></li>
   </ul>
 </div>
-
-<div class="dropdown p-2">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
-    Choose optical flat
+<button class="btn btn-secondary " type="button" onclick ="obj2()" >
+    Master gauge
+  </button>
+  
+  <div class="dropdown p-2">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="cts2">
+    Choose test surface
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" onclick="flat1()">Regular</a></li>
-    <li><a class="dropdown-item" onclick="flat2()">Convex</a></li>
-	<li><a class="dropdown-item" onclick="flat3()">Concave</a></li>
+    
+    <!-- <li><a class="dropdown-item" onclick="obj2()">Master gauge</a></li> -->
+	<li><a class="dropdown-item" onclick="obj3()">Sample slip gauge 1</a></li>
+	<li><a class="dropdown-item" onclick="obj31()">Sample slip gauge 2</a></li>
+	<li><a class="dropdown-item" onclick="obj32()">Sample slip gauge 3</a></li>
+	<li><a class="dropdown-item" onclick="obj33()">Sample slip gauge 4</a></li>
+	<li><a class="dropdown-item" onclick="obj34()">Sample slip gauge 5</a></li>
   </ul>
 </div>
 
+<button class="btn btn-secondary " type="button" onclick ="flat1()" >
+    Place optical flat
+  </button>
+ 
+
+
+  <input type="number" id="hchk" value="0" style="visibility:hidden"/>
+  <input type="number" id="of2" value="0" style="visibility:hidden"/>
 
 
 
@@ -165,31 +184,7 @@
 	
 	</div>
 	</div>
-	
-	
-		<div class="row ">
-		<div class="col-md-1"></div>
-		<div class="col-md-10">
-			<div class="card" style=" width:100%;background-color:pink" > 
-			
-			<div class="card-body"  >
-					
-			<span class="card-text" >Total number of fringes ( n ):&nbsp;<input  type="number" id="n" value="0" readonly=readonly style="width:20%;text-align:center"></span><br/><br/>
-			<span class="card-text">True height of sample gauge ( mm ):&nbsp;<input type="number" id="sgh" value="0" readonly=readonly  style="width:30%;text-align:center"></span><br/><br/>
-			<span class="card-text">wavelength of the light source ( &lambda; ) = 0.509 &times; 10<sup>-3</sup> mm</span><br/><br/>
-			<span class="card-text">Standard height of Master gauge: 20 mm</span><br/><br/>
-			<span class="card-text">Gauge width ( L ): 15 mm</span><br/><br/>
-			<span class="card-text">Consecutive distance between two gauges ( G ): 30 mm</span><br/><br/>
-			<span class="card-text">Change in height ( &Delta;H ) = (n &lambda;/2 ) ( G/L ) mm</span><br/><br/>
-
-			<button  type="button"   class="btn btn-danger " onclick="calculate()" >Calculate</button>
-			</div></div></div>			
-			<div class="col-md-1"></div>
-						
-			
-			</div> 
-			
-			
+		
 			<div class="row ">
 			<div class="col-md-12">
 			
@@ -216,15 +211,36 @@
 
 	</div>
 	
+	<div class="row ">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<div class="card" style=" width:100%;background-color:pink" > 
+			
+			<div class="card-body"  >
+					
+			<span class="card-text" style="position:absolute;left:30%">Total number of fringes (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">n</span>):</span>&nbsp;<input  type="number" id="n" value="0" readonly=readonly style="width:15%;text-align:center;position:absolute;left:58%"><br/><br/>
+			<span class="card-text" style="position:absolute;left:30%">True height of sample gauge (mm):</span>&nbsp;<input type="number" id="sgh" value="0" readonly=readonly  style="width:15%;text-align:center;position:absolute;left:58%"><br/><br/>
+			<span class="card-text" style="position:absolute;left:30%">wavelength of the light source (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">&lambda;</span>) = 0.509 &times; 10<sup>-3</sup> mm</span><br/><br/>
+			<span class="card-text" style="position:absolute;left:30%">Standard height of Master gauge: 20 mm</span><br/><br/>
+			<span class="card-text" style="position:absolute;left:30%">Gauge width (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">L</span>): 15 mm</span><br/><br/>
+			<span class="card-text" style="position:absolute;left:30%">Consecutive distance between two gauges (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">G</span>): 30 mm</span><br/><br/>
+			<span class="card-text" style="position:absolute;left:30%">Change in height (&Delta;<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">H</span>) = (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">n &lambda;</span>/2) (<span style="font-family:'Bodoni MT';font-style:italic;font-size:18px">G/L</span>) mm</span><br/><br/>
+
+			<button  type="button" id="calc"  class="btn btn-danger " onclick="calculate()" disabled=disabled>Calculate</button>
+			</div></div></div>			
+			<div class="col-md-1"></div>
+						
+			
+			</div> 
 	
 	
 	<div class="row  my-5 gy-2"><!--- 2nd row under fourth container start--->		
 		
 			<div class="col-md-12 "><!--2nd col under 2nd row start -->	
 			
-		<button type="button"  class="btn btn-info " onclick="CreateTable()" >Add to Table</button>
+		<button type="button" id="att" class="btn btn-info " onclick="CreateTable()" disabled=disabled>Add to Table</button>
 	
-		<button type="button"   class="btn btn-danger " onclick="Refresh()" >Clear</button>
+		<button type="button" id="clr"  class="btn btn-danger " onclick="Refresh()" disabled=disabled>Clear</button>
 		</div>
 		</div> 
 		
@@ -239,10 +255,10 @@
 				
 				  <tr>
 					<th>Sl No.</th>
-					<th>Total no. of fringes( n )</th> 
-					<th>True height of sample gauge ( mm )</th>
+					<th>Total no. of fringes (n)</th> 
+					<th>True height of sample gauge (mm)</th>
 					<th>Percentage change in the height (&percnt;)
-					$$( \frac{\Delta H}{20} \times 100 )$$</th>
+					$$(\frac{\Delta H}{20} \times 100)$$</th>
 					
 				  </tr>
 				  

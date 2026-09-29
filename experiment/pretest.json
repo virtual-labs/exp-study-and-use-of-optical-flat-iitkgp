@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "What is the primary function of an optical flat?",
+      "question": "1. What is the primary function of an optical flat?",
       "answers": {
         "a": "Measure temperature",
         "b": "Assess the flatness of the surfaces",
@@ -13,7 +13,7 @@
       "difficulty": "Beginner"
     },
     {
-      "question": "The Working Principle of optical flat is",
+      "question": "2. The Working Principle of optical flat is",
       "answers": {
         "a": "Diffraction",
         "b": "Reflection",
@@ -24,7 +24,7 @@
       "difficulty": "Beginner"
     },
     {
-      "question": "What type of light source is used with optical flats?",
+      "question": "3. What type of light source is used with optical flats?",
       "answers": {
         "a": "Monochromatic",
         "b": "Ultraviolet light",
@@ -35,7 +35,7 @@
       "difficulty": "Beginner"
     },
     {
-      "question": "In which industry are optical flats commonly used for precision measurements?",
+      "question": "4. In which industry are optical flats commonly used for precision measurements?",
       "answers": {
         "a": "Agriculture",
         "b": "Fashion",
@@ -46,7 +46,7 @@
       "difficulty": "Beginner"
     },
     {
-      "question": "Which of the following materials is used to make optical flats?",
+      "question": "5. Which of the following materials is used to make optical flats?",
       "answers": {
         "a": "Toughened glass",
         "b": "Glass wool",

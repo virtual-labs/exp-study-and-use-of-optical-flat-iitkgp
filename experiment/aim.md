@@ -1,4 +1,4 @@
 ## Aim of the experiment
 
-Study and use of Optical flats
+Study and use of Optical flats.
                 

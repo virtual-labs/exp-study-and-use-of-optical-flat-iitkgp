@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "What does the interference pattern reveal in optical flats?",
+      "question": "1. What does the interference pattern reveal in optical flats?",
       "answers": {
         "a": "Surface curvature",
         "b": "Colour variation",
@@ -13,7 +13,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Why monochromatic light source is used with optical flats?",
+      "question": "2. Why monochromatic light source is used with optical flats?",
       "answers": {
         "a": "Increases surface reflectivity",
         "b": "Enhances colour contrast",
@@ -24,7 +24,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "What is the diameter range of optical flats used for the flatness test?",
+      "question": "3. What is the diameter range of optical flats used for the flatness test?",
       "answers": {
         "a": "50 mm to 500 mm",
         "b": "1 mm to 100 mm",
@@ -35,7 +35,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "When regular fringes are obtained using optical flat?",
+      "question": "4. When regular fringes are obtained using optical flat?",
       "answers": {
         "a": "Perfectly flat surface",
         "b": "Convex surface",
@@ -46,7 +46,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "When fringes are obtained curved away from line of contact in optical flat test?",
+      "question": "5. When fringes are obtained curved away from line of contact in optical flat test?",
       "answers": {
         "a": "For convex surface",
         "b": "For flat surface",
